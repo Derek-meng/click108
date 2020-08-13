@@ -32,6 +32,7 @@ class TwelveConstellationsDTO
     }
 
     /**
+     * 星座名稱
      * @return string|null
      */
     public function name(): ?string
