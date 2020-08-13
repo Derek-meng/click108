@@ -8,10 +8,10 @@ use PHPUnit\Framework\TestCase;
 
 class TestTwelveConstellations extends TestCase
 {
-    public function testMine()
+    public function testDay()
     {
         $detector = new TwelveConstellations();
-        $dto = $detector->mine();
+        $dto = $detector->day();
         foreach ($dto as $constellations) {
             var_dump($constellations->entireContent());
             $this->assertIsString($constellations->name());

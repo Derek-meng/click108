@@ -28,7 +28,7 @@ class TwelveConstellations
     /**
      * @return array|TwelveConstellationsDTO[]
      */
-    public function mine(): array
+    public function day(): array
     {
         $redirectUrls = $this->getRedirectUrls();
         $dto = [];
