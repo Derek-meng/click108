@@ -194,8 +194,8 @@ class TwelveConstellationsDTO
                         'https://yimgs.click108.com.tw/astro/images/2013/daily_images/DATE2/',
                         ''
                     );
-                    $day = !is_null($day) ? (int)StringMaster::replace($href, '.png', '') * pow(10, 1 - $i) :
-                        $day += (int)StringMaster::replace($href, '.png', '') * pow(10, 1 - $i);
+                    $parseDay = (int)StringMaster::replace($href, '.png', '') * pow(10, 1 - $i);
+                    $day = is_null($day) ? $parseDay : $day += $parseDay;
                 }
             }
         });
